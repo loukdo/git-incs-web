@@ -1,10 +1,19 @@
-import Home from "./pages/home/page";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import Home from "./pages/home/_components/page";
+import Layout from "./layouts/layout";
 
-export default function App() {
+function App() {
   return (
-    <div className="h-screen w-full flex justify-center items-center">
-      <p className="text-2xl font-bold">Hello World</p>
-      <Home />
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        {/* Routes with Layout */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+export default App;
