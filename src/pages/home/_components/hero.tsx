@@ -15,7 +15,8 @@ export default function Hero() {
         <div className="text-center px-4 max-w-5xl mx-auto">
           {/* Hero Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="text-gray-900">Growth. </span>
+           
+            <span className="text-gray-900">Growth.  </span>
             <span className="text-[#FF6B35]">Innovation. </span>
             <span className="text-gray-900">Technology.</span>
           </h1>
